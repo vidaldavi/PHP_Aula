@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <?php
+
+    //Atividade 1(if/else/elseif)
+
+    $a = 1;
+    $b = 1;
+    $c = 1;
+
+   if ($a > $b && $a > $c && $b < $c){
+    echo "$a e $b<br><br>";
+   }
+   elseif ($a > $b && $c<$b){
+    echo "$a e $c<br><br>";
+   }
+   elseif ($b > $a && $c < $a){
+    echo "$b e $c<br><br>";
+   }
+   elseif ($b > $c && $a < $c){
+    echo "$b e $a<br><br>";
+   }
+   elseif ($c > $a && $b < $a){
+    echo "$c e $b<br><br>";
+   }
+    elseif ($c > $b && $a < $b){
+        echo "$c e $a<br><br>";
+   }
+   else{
+    echo "Os valores são iguais.<br><br>";
+   }
+
+   //Atividade 2(if/else/elseif)
+
+   $d = 3; 
+   $e = 2;
+   $f = 1;
+
+   if ($d<$e && $e<$f){
+    echo "Ordem crescente: $d, $e e $f.<br><br>";
+   }
+   elseif ($f<$e && $e<$d){
+    echo "Ordem crescente: $f, $e e $d.<br><br>";
+   }
+   elseif ($d<$f && $f<$e){
+    echo "Ordem crescente: $d, $f e $e.<br><br>";
+   }
+   elseif ($e<$f && $f<$d){
+    echo "Ordem crescente: $e, $f e $d.<br><br>";
+   }
+   elseif ($f<$d && $d<$e){
+    echo "Ordem crescente: $f, $d e $e.<br><br>";
+   }
+   elseif ($e<$d && $d<$f){
+    echo "Ordem crescente: $e, $d e $f.<br><br>";
+   }
+   else{
+    echo "Há números iguais.<br><br>";
+   }
+
+   //Atividade 3(if/else/elseif)
+
+   $s = 1000.00;
+   $sa;
+   if($s<=280.00){
+    $sa = (20/100*$s)+$s;
+    $aum = 20;
+    $val = $sa - $s;
+    echo "Salário atual: $s.<br>";
+    echo "Percentual aumentado: $aum%<br>";
+    echo "Valor do aumento: $val<br>";
+    echo "Novo Salário: $sa.<br><br>";
+   }
+   elseif($s>280.00 && $s <= 700.00){
+    $sa = (15/100*$s)+$s;
+    $aum = 15;
+    $val = $sa - $s;
+    echo "Salário atual: $s.<br>";
+    echo "Percentual aumentado: $aum%<br>";
+    echo "Valor do aumento: $val<br>";
+    echo "Novo Salário: $sa.<br><br>";
+   }
+   elseif($s>700.00 && $s <= 1500.00){
+    $sa = (10/100*$s)+$s;
+    $aum = 10;
+    $val = $sa - $s;
+    echo "Salário atual: $s.<br>";
+    echo "Percentual aumentado: $aum%<br>";
+    echo "Valor do aumento: $val<br>";
+    echo "Novo Salário: $sa.<br><br>";
+   } 
+   elseif($s>1500.00){
+    $sa = (5/100*$s)+$s;
+    $aum = 5;
+    $val = $sa - $s;
+    echo "Salário atual: $s.<br>";
+    echo "Percentual aumentado: $aum%<br>";
+    echo "Valor do aumento: $val<br>";
+    echo "Novo Salário: $sa.<br><br>";
+   }
+   else{
+    echo "Salário inválido.";
+   }
+
+   //Atividade 4(Switch)
+
+   
+   ?>
+</body>
+</html>
